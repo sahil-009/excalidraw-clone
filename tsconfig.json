@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@repo/*": ["./packages/*"],
+      "@repo/typescript-config": ["./packages/typescript-config"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "references": [
+    { "path": "./apps/http-backend" },
+    { "path": "./apps/ws-backend" },
+    { "path": "./packages/typescript-config" }
+  ]
+}
